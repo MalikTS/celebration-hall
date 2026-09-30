@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Дом торжеств Celebration Hall — мероприятия и бронирование на выбранную дату."
+    />
+    <title>Мои бронирования — Celebration Hall</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script defer src="/static/js/api.js"></script>
+    <script defer src="/static/js/auth.js"></script>
+    <script defer src="/static/js/app.js"></script>
+  </head>
+  <body data-page="bookings">
+    <a class="skip-link" href="#main">К содержимому</a>
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">CH</span>
+          <span>Celebration Hall<small>ДОМ ТОРЖЕСТВ</small> </span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <a href="/">Мероприятия</a>
+          <a href="/static/bookings.html" aria-current="page"
+            >Мои бронирования</a
+          >
+        </nav>
+        <div id="account" class="account"></div>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <section class="page-heading heading-row">
+        <div>
+          <p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p>
+          <h1>Мои бронирования</h1>
+          <p>Даты, мероприятия и контактные данные — всё под рукой.</p>
+        </div>
+        <a class="button primary" href="/">Выбрать мероприятие ↗</a>
+      </section>
+      <div id="bookings" class="bookings-list" aria-live="polite">
+        <p class="notice">Загружаем ваши бронирования…</p>
+      </div>
+    </main>
+    <footer class="footer container">
+      <span>Celebration Hall</span>
+      <span>Место для ваших особенных событий</span>
+    </footer>
+    <noscript>
+      <p class="notice">
+        Для загрузки мероприятий и бронирования включите JavaScript.
+      </p>
+    </noscript>
+  </body>
+</html>
